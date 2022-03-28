@@ -13,12 +13,12 @@ const Navbar = () => {
     ]
     return (
         //here !open will change the value of open again and again.
-        <div>
+        <div className="bg-indigo-600" >
             
             <div onClick={()=> setOpen(!open)} className='w-6 h-6 md:hidden'>
                 {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
             </div>
-            <ul className={`md:flex justify-center absolute duration-500 ${open ? `top-6` : `top-[-120px]`}`}>
+            <ul className={`md:flex justify-center md:static absolute bg-indigo-600 w-full duration-500 ${open ? 'top-6' : 'top-[-120px]'}`}>
                 {
                     routes.map(route => <Link 
                     key = {route.id}
