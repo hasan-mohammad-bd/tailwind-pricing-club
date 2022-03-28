@@ -3,9 +3,21 @@ import PricingOption from '../PricingOption/PricingOption';
 
 const Pricing = () => {
     const pricingOptions = [
-        {id: 1, name: "Free", price: 0},
-        {id: 2, name: "Regular", price: 9.99},
-        {id: 3, name: "Premium", price: 19.99},
+        {id: 1, name: "Free", price: 0, benefits: 
+        ["lifetime free" , 
+        "Unlimited deals", 
+        "Localized deals",
+        "crazy deals"]},
+        {id: 2, name: "Regular", price: 9.99,benefits: 
+        ["everything is  free" , 
+        "Unlimited deals", 
+        "Localized deals",
+        "crazy deals"]},
+        {id: 3, name: "Premium", price: 19.99,benefits: 
+        ["lifetime free" , 
+        "Unlimited deals", 
+        "Localized deals",
+        "crazy deals"]}
 
     ]
 
